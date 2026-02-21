@@ -1,82 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>J S Nidhish | Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>J S Ninad | Embedded Software Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <header>
-        <nav>
-            <h2 class="logo">Nidhish.</h2>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="menu-toggle" id="menu-toggle">&#9776;</div>
-        </nav>
-    </header>
+<header>
+  <div class="container nav">
+    <div class="logo">J S Ninad</div>
 
-    <!-- HOME -->
-    <section id="home" class="home">
-        <div class="home-content">
-            <h1>Hi, I'm <span>J S Nidhish</span></h1>
-            <h3>Web Developer | Student | Designer</h3>
-            <p>I build modern and responsive websites.</p>
-            <a href="#contact" class="btn">Hire Me</a>
-        </div>
-    </section>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
 
-    <!-- ABOUT -->
-    <section id="about" class="about">
-        <h2>About Me</h2>
-        <p>
-            I am a passionate web developer who loves creating beautiful
-            and functional websites. I am constantly learning new technologies
-            to improve my skills.
-        </p>
-    </section>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </div>
+</header>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="projects">
-        <h2>My Projects</h2>
-        <div class="project-container">
-            <div class="project-card">
-                <h3>Portfolio Website</h3>
-                <p>Personal portfolio built with HTML, CSS & JS.</p>
-            </div>
-            <div class="project-card">
-                <h3>Smart Ambulance System</h3>
-                <p>Emergency booking system project.</p>
-            </div>
-            <div class="project-card">
-                <h3>E-Commerce UI</h3>
-                <p>Frontend design for online store.</p>
-            </div>
-        </div>
-    </section>
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero-content">
+    <h1>Embedded Software Developer</h1>
+    <p>Building reliable firmware & real-time systems at iWave Systems</p>
+    <a href="#projects" class="btn">View Projects</a>
+  </div>
+</section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <p>Email: nidhishshetty018@gmail.com</p>
-        <button class="btn" onclick="showMessage()">Send Message</button>
-    </section>
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="container">
+    <h2>About Me</h2>
+    <p>
+      I specialize in C/C++, RTOS, microcontrollers, and Embedded Linux.
+      Passionate about developing efficient firmware powering real-world intelligent systems.
+    </p>
+  </div>
+</section>
 
-    <footer>
-        <p>© 2026 J S Nidhish | All Rights Reserved</p>
-    </footer>
+<!-- SKILLS -->
+<section id="skills" class="section dark">
+  <div class="container">
+    <h2>Technical Skills</h2>
+    <div class="grid">
+      <div class="card">C / C++</div>
+      <div class="card">RTOS</div>
+      <div class="card">Embedded Linux</div>
+      <div class="card">Device Drivers</div>
+      <div class="card">ARM Cortex</div>
+      <div class="card">Debugging</div>
+    </div>
+  </div>
+</section>
 
-    <!-- JS -->
-    <script src="script.js"></script>
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <div class="container">
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="project-card">
+        <h3>Secure Bootloader</h3>
+        <p>Custom ARM Cortex bootloader with OTA support.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>IoT Firmware</h3>
+        <p>Real-time sensor firmware for smart monitoring systems.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>RTOS Control System</h3>
+        <p>Task scheduling and IPC implementation for embedded device.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section dark">
+  <div class="container">
+    <h2>Contact</h2>
+    <form id="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 J S Ninad | Embedded Software Developer</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
